@@ -6,5 +6,5 @@ n2 = float(input("Enter nummber 2: "))
 if n2 == 0:
     print ("Indeterminate")
 else:
-    quotient = int(n1 / n2)
+    quotient = int(n1 // n2)
     print (quotient)
