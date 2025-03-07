@@ -1,2 +1,13 @@
-num1, num2 = sorted(map(float, input("Enter two numbers: ").split()))
-print(*[i for i in range(int(num1) + 1, int(num2))])
+n1 = int(input("Enter number 1: "))
+n2 = int(input("enter number 2: "))
+
+if n1 == n2:
+    print ("Equal numbers.")
+elif n1 + 1 == n2 or n2 + 1 == n1:
+    print ("Consecutive numbers.")
+else:
+    start = min (n1, n2)
+    end = max (n1, n2)
+
+    for i in range(start + 1, end):
+        print (i)
